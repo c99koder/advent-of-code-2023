@@ -24,8 +24,8 @@ fun power(sets: List<String>): Int {
             val count = it.split(" ")[0].toInt()
             val color = it.split(" ")[1]
 
-            if(!max.containsKey(color) || max[color] ?: 0 < count)
-            max[color] = count
+            if(max[color] ?: 0 < count)
+                max[color] = count
         }
     }
 
