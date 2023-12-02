@@ -15,7 +15,6 @@ fun main() {
     var total2 = 0
 
     File("input.txt").forEachLine { 
-        println(it)
         total1 += firstDigit(it) * 10
         total1 += firstDigit(it.reversed())
 
